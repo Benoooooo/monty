@@ -1,8 +1,8 @@
 /*
- *  * File: run_monty.c
- *   * Auth: Bennett Dixon
- *    *       Brennan D Baraban
- *     */
+ * File: run_monty.c
+ * Auth: kelechi nnadi
+ * kelechi nnadi
+ */
 
 #include "monty.h"
 #include <string.h>
