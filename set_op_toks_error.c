@@ -1,14 +1,14 @@
 /*
- *  * File: set_op_tok_error.c
- *   * Auth: Bennett Dixon
- *    */
+ * File: set_op_tok_error.c
+ * Auth: kelechi nnadi
+ */
 
 #include "monty.h"
 
 /**
- *  * set_op_tok_error - Sets last element of op_toks to be an error code.
- *   * @error_code: Integer to store as a string in op_toks.
- *    */
+ * set_op_tok_error - Sets last element of op_toks to be an error code.
+ * @error_code: Integer to store as a string in op_toks.
+ */
 void set_op_tok_error(int error_code)
 {
 	int toks_len = 0, i = 0;

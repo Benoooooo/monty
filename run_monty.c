@@ -14,8 +14,8 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int);
 int run_monty(FILE *script_fd);
 
 /**
- *  * free_tokens - Frees the global op_toks array of strings.
- *   */
+ * free_tokens - Frees the global op_toks array of strings.
+ */
 void free_tokens(void)
 {
 	size_t i = 0;
@@ -30,10 +30,10 @@ void free_tokens(void)
 }
 
 /**
- *  * token_arr_len - Gets the length of current op_toks.
- *   *
- *    * Return: Length of current op_toks (as int).
- *     */
+ * token_arr_len - Gets the length of current op_toks.
+ *
+ * Return: Length of current op_toks (as int).
+ */
 unsigned int token_arr_len(void)
 {
 	unsigned int toks_len = 0;
@@ -44,13 +44,13 @@ unsigned int token_arr_len(void)
 }
 
 /**
- *  * is_empty_line - Checks if a line read from getline only contains delimiters.
- *   * @line: A pointer to the line.
- *    * @delims: A string of delimiter characters.
- *     *
- *      * Return: If the line only contains delimiters - 1.
- *       *         Otherwise - 0.
- *        */
+ * is_empty_line - Checks if a line read from getline only contains delimiters.
+ * @line: A pointer to the line.
+ * @delims: A string of delimiter characters.
+ *
+ * Return: If the line only contains delimiters - 1.
+ *         Otherwise - 0.
+ */
 int is_empty_line(char *line, char *delims)
 {
 	int i, j;
@@ -70,11 +70,11 @@ int is_empty_line(char *line, char *delims)
 }
 
 /**
- *  * get_op_func - Matches an opcode with its corresponding function.
- *   * @opcode: The opcode to match.
- *    *
- *     * Return: A pointer to the corresponding function.
- *      */
+ * get_op_func - Matches an opcode with its corresponding function.
+ * @opcode: The opcode to match.
+ *
+ * Return: A pointer to the corresponding function.
+ */
 void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 {
 	instruction_t op_funcs[] = {
@@ -109,11 +109,11 @@ void (*get_op_func(char *opcode))(stack_t**, unsigned int)
 }
 
 /**
- *  * run_monty - Primary function to execute a Monty bytecodes script.
- *   * @script_fd: File descriptor for an open Monty bytecodes script.
- *    *
- *     * Return: EXIT_SUCCESS on success, respective error code on failure.
- *      */
+ * run_monty - Primary function to execute a Monty bytecodes script.
+ * @script_fd: File descriptor for an open Monty bytecodes script.
+ *
+ * Return: EXIT_SUCCESS on success, respective error code on failure.
+ */
 int run_monty(FILE *script_fd)
 {
 	stack_t *stack = NULL;
